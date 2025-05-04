@@ -479,3 +479,13 @@ html {
   transform: scale(1.05);
 }
 
+/* Footer */
+.site-footer {
+  background-color: #B0C6D4;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #1E3765;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
