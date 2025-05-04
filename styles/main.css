@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Quicksand:wght@300..700&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+.logo-text {
+  font-size: 24px; /* Adjust text size */
+  font-weight: bold;
+  color: #ffffff; /* Adjust text color */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-text:hover {
+  transform: scale(1.1); /* Text grows when hovered */
+  color: #B0C6D4 /* Change text color on hover */
+}
+
+/* Body */
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: #F8F9FC;
+  color: #000000;
+  padding-top: 70px; /* offset for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1E3765;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #F8F9FC;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #B0C6D4;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem; /* ⬅️ increase top/bottom padding */
+  max-width: 1200px;
+  margin: auto;
+  gap: 6rem;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 1rem;
+}
+
+.hero-left p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  width: 600px;
+  height: 100px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Problem Statement Section */
+.problem-statement {
+  padding: 4rem 2rem;
+  background-color:#B0C6D4;
+  text-align: center;
+}
+
+.problem-statement h2 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 2rem;
+}
+
+.problem-box {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.6;
+  border: 1px solid #B0C6D4;
+}
+
+/* CLD Diagram Section */
+.cld-diagram {
+  padding: 4rem 2rem;
+  background-color: #F8F9FC;
+  text-align: center;
+}
+
+.cld-diagram h2 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 2rem;
+}
+
+.cld-box {
+  background-color: transparent; /* Remove background so only the outline is visible */
+  margin: 0 auto;
+  padding: 1rem; /* Padding around the image */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid #B0C6D4; /* A more prominent outline */
+  display: inline-block; /* Makes the box fit the image size */
+}
+
+.cld-box img {
+  width: 80%; /* Reduced width of the image */
+  height: auto;
+  max-width: 600px; /* Optional: restrict the max width */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto; /* Centers the image inside the box */
+  display: block; /* Ensures the image is a block element for better centering */
+}
+
+.cld-box img:hover {
+  transform: scale(1.05); /* Optional: slight zoom effect on hover */
+}
+
+
+
+/* EPS Analysis Section */
+.eps-analysis {
+  padding: 4rem 2rem;
+  background-color: #B0C6D4;
+  text-align: center;
+}
+
+.eps-analysis h2 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 0.5rem;
+}
+
+.eps-analysis h3 {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+}
+
+.eps-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.eps-box {
+  background-color: #ffffff;
+  border: 1px solid #B0C6D4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.eps-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: #1E3765;
+}
+
+.eps-box h4 {
+  font-size: 1.1rem;
+  color: #1E3765;
+  margin-bottom: 1rem;
+}
+
+.eps-box ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #000000;
+  line-height: 1.6;
+}
+
+
+.eps-subheading {
+  background-color: #1E3765;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+.eps-subheading h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/* Leverage Points Analysis Section */
+#leverage-points {
+  padding: 4rem 2rem;
+  background-color: #F8F9FC;
+  text-align: center;
+}
+
+#leverage-points h2 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 1.5rem;
+}
+
+#leverage-points table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+#leverage-points th,
+#leverage-points td {
+  padding: 12px 20px;
+  text-align: left;
+  border: 1px solid #B0C6D4;
+}
+
+#leverage-points th {
+  background-color: #1E3765;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+#leverage-points td {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1rem;
+}
+
+#leverage-points tr:hover {
+  background-color: #B0C6D4;
+}
+
+#leverage-points .container {
+  overflow-x: auto;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  #leverage-points table {
+    font-size: 0.9rem;
+  }
+
+  #leverage-points th, #leverage-points td {
+    padding: 8px 12px;
+  }
+}
+
+/* System Archetypes Section */
+#system-archetypes {
+  padding: 4rem 2rem;
+  background-color:#B0C6D4 ;
+  text-align: center;
+}
+
+#system-archetypes h2 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 2rem;
+}
+
+/* Archetype Containers */
+.archetype-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.archetype-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.archetype-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Box Specific Styling */
+#shifting-burden {
+  background-color: #1E3765;
+  color: #ffffff;
+
+}
+
+#fixes-that-fail {
+  background-color: #1E3765;
+  color: #ffffff;
+}
+
+.archetype-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.archetype-box p {
+  font-size: 1rem;
+  color: #B0C6D4 ;
+  line-height: 1.5;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .archetype-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .archetype-box {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Insights & APIs Section */
+.insights-section {
+  padding: 4rem 2rem;
+  background-color: #F8F9FC;
+  text-align: center;
+}
+
+.insights-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1E3765;
+  font-weight: bold;
+  
+}
+
+.insights-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* More space between circles */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.insight-circle {
+  background-color: #1E3765;
+  color: white;
+  padding: 40px;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.insight-circle h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.insight-circle:hover {
+  transform: scale(1.1);
+  background-color: #B0C6D4;
+  color: #000;
+  border: 3px solid #000;
+}
+
+.insight-circle:hover h3 {
+  color: #000;
+}
+
+
+/* BOT Diagram Section */
+.bot-diagram {
+  padding: 4rem 2rem;
+  background-color: #F8F9FC;
+  text-align: center;
+}
+
+.bot-diagram h2 {
+  font-size: 2rem;
+  color: #1E3765;
+  margin-bottom: 2rem;
+}
+
+.bot-box {
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid #B0C6D4;
+  display: inline-block;
+}
+
+.bot-box img {
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
+  display: block;
+}
+
+.bot-box img:hover {
+  transform: scale(1.05);
+}
+
