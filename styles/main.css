@@ -71,12 +71,12 @@ body {
   color: #B0C6D4;
 }
 
-/* Hero Section */
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 2rem; /* ⬅️ increase top/bottom padding */
+  padding: 5rem 2rem;
   max-width: 1200px;
   margin: auto;
   gap: 6rem;
@@ -112,12 +112,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Problem Statement Section */
 .problem-statement {
   padding: 4rem 2rem;
   background-color:#B0C6D4;
@@ -143,7 +141,6 @@ html {
   border: 1px solid #B0C6D4;
 }
 
-/* CLD Diagram Section */
 .cld-diagram {
   padding: 4rem 2rem;
   background-color: #F8F9FC;
@@ -157,7 +154,7 @@ html {
 }
 
 .cld-box {
-  background-color: transparent; /* Remove background so only the outline is visible */
+  background-color: transparent; 
   margin: 0 auto;
   padding: 1rem; /* Padding around the image */
   border-radius: 12px;
@@ -167,9 +164,10 @@ html {
 }
 
 .cld-box img {
-  width: 80%; /* Reduced width of the image */
+  width: 80%;
   height: auto;
-  max-width: 600px; /* Optional: restrict the max width */
+  width: 820px;
+  height: 450px ;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
   margin: 0 auto; /* Centers the image inside the box */
@@ -255,7 +253,7 @@ html {
   font-weight: normal;
 }
 
-/* Leverage Points Analysis Section */
+
 #leverage-points {
   padding: 4rem 2rem;
   background-color: #F8F9FC;
@@ -302,7 +300,7 @@ html {
   overflow-x: auto;
 }
 
-/* Media Query for smaller screens */
+
 @media (max-width: 768px) {
   #leverage-points table {
     font-size: 0.9rem;
@@ -313,7 +311,6 @@ html {
   }
 }
 
-/* System Archetypes Section */
 #system-archetypes {
   padding: 4rem 2rem;
   background-color:#B0C6D4 ;
@@ -372,7 +369,6 @@ html {
   line-height: 1.5;
 }
 
-/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   .archetype-container {
     flex-direction: column;
@@ -403,7 +399,7 @@ html {
 .insights-container {
   display: flex;
   justify-content: center;
-  gap: 50px; /* More space between circles */
+  gap: 50px; 
   flex-wrap: wrap;
   margin-top: 2rem;
 }
@@ -479,7 +475,7 @@ html {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 .site-footer {
   background-color: #B0C6D4;
   padding: 1.5rem 0;
